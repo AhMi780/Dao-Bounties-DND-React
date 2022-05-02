@@ -30,7 +30,7 @@ const DraggableElement = ({ prefix, elements, listTitle }) => {
       <Droppable droppableId={`${prefix}`}>
         {(provided) => (
           <div {...provided.droppableProps} ref={provided.innerRef}>
-            <div className="flex flex-col gap-y-4 border-x border-[#4a4a4a] px-3">
+            <div className="flex h-full w-full min-h-screen min-w-[270px] flex-col gap-y-4 border-x border-[#4a4a4a] px-3">
               {elements.map((item, index) => (
                 <ListItem
                   color={color}
