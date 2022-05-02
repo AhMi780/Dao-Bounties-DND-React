@@ -54,18 +54,20 @@ function Bounties() {
           <h1 className="text-white pb-1 mt-[20px] mb-[43px] w-full text-center text-4xl font-bold border-b border-[#4a4a4a]">
             Bounties
           </h1>
-          <DragDropContext onDragEnd={onDragEnd}>
-            <div className="grid grid-cols-4 gap-4">
-              {lists.map(({ title, key }) => (
-                <DraggableElement
-                  listTitle={title}
-                  elements={elements[key]}
-                  key={key}
-                  prefix={key}
-                />
-              ))}
-            </div>
-          </DragDropContext>
+          <div className="overflow-x-auto">
+            <DragDropContext onDragEnd={onDragEnd}>
+              <div className="grid grid-cols-4 gap-4 min-w-[1128px]">
+                {lists.map(({ title, key }) => (
+                  <DraggableElement
+                    listTitle={title}
+                    elements={elements[key]}
+                    key={key}
+                    prefix={key}
+                  />
+                ))}
+              </div>
+            </DragDropContext>
+          </div>
         </div>
       </div>
     </div>

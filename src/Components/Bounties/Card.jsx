@@ -1,6 +1,6 @@
 import React from "react";
 
-const Card = ({ item, color }) => {
+const Card = ({ item, color, prefix }) => {
   return (
     <>
       <div className="bg-[#5a4860] overflow-hidden text-white rounded-[12px] pt-5">
@@ -12,7 +12,7 @@ const Card = ({ item, color }) => {
         <div
           style={{
             backgroundColor: color,
-            color: item.prefix === "openBounties" ? "rgb(31, 31, 31)" : "white",
+            color: prefix === "openBounties" ? "rgb(31, 31, 31)" : "white",
           }}
           className={`flex text-[13px] font-semibold justify-between items-center  px-5  py-2`}
         >
