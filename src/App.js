@@ -1,6 +1,7 @@
 import Bounties from "./Components/Bounties";
 
-// code bugs on localhost but works fine on production.. i'll fix this asap
+// github :https://github.com/AhMi780/Dao-Bounties-DND-React
+// NetlifyLive : https://prismatic-smakager-100122.netlify.app
 
 function App() {
   return (
